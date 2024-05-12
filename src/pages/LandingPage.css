@@ -1,0 +1,45 @@
+.search-mobile {
+    display: block !important;
+  } 
+   .search-desktop {
+    display: none!important ;
+    
+  }
+.toolBar{
+    
+    color: white;
+    width: 100%;
+}
+.hero {
+    background-color: #fff;
+    color: cadetblue!important;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.hero-heading {
+     color: cadetblue;
+    font-size: 1.5rem;
+    width: 80%;
+    position: relative;
+    left: 1rem;
+  }
+  
+  .hero-highlight {
+     color: white;
+    font-weight: 700;
+    background: cadetblue;
+    border-radius: 5px;
+    padding: 0.2rem;
+  }
+
+  @media screen and (min-width:600px){
+    .search-mobile{
+        display: none!important;
+    }
+    .search-desktop{
+        display: block!important;
+        border-bottom: #fff;
+    }
+  }
