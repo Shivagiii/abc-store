@@ -28,7 +28,7 @@ function ProductsDisplay() {
       />
       <Box className="hero">
         <p className="hero-heading">
-          India’s <span className="hero-highlight">FASTEST DELIVERY</span> to
+          India’s <span className="hero-highlight">FASTEST DELIVERY</span> at
           your door step
         </p>
       </Box>

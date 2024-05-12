@@ -56,6 +56,9 @@ function ProductCard({ data }) {
           className="card-button"
           startIcon={<AddShoppingCartOutlined />}
           size="small"
+          
+          
+          sx={{ color:"white", backgroundColor:"#5f9ea0"}}
         >
           ADD TO CART
         </Button>
