@@ -17,16 +17,16 @@ function Header(props) {
 
   return (
     <Box sx={{
-        backgroundColor:"rgb(129, 189, 189)" , color:"white"}}>
+        backgroundColor:"rgb(129, 189, 189)" , color:"white" , textAlign:"center", fontWeight:"bold"}}>
         <Toolbar>
-          ALL
+          CATEGORY
         </Toolbar>
         <Divider />
-        <List >
+        <List  >
           {categories.map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text.toUpperCase()} />
+              <ListItemButton sx={{padding:"0.5rem"}} >
+                <ListItemText primary={text.toUpperCase()}  />
               </ListItemButton>
             </ListItem>
           ))}

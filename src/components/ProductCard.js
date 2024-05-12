@@ -16,7 +16,9 @@ function ProductCard({ data }) {
   // console.log(data)
   const { id, title, price, category, description, image } = data;
   return (
-    <Card className="card">
+    <Card className="card" sx={{
+        height:"55vh"
+      }}>
       <CardMedia
         component="img"
         alt={title}

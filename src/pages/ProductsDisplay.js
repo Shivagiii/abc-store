@@ -41,13 +41,7 @@ function ProductsDisplay() {
             md={4}
             lg={3}
             key={item.id}
-            sx={{
-              
-              "& .css-bhp9pd-MuiPaper-root-MuiCard-root": {
-                height: "50vh"
-              },
-
-            }}
+            
           >
             <ProductCard data={item} />
           </Grid>

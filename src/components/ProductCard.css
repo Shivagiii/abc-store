@@ -1,6 +1,6 @@
-
-
-
+.card{
+height: 50vh !important;
+}
 .card-button {
     text-transform: none;
     font-weight: 400;

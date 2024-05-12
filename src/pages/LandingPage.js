@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ProductsDisplay from "./ProductsDisplay";
 import Header from "../components/Header";
 import SearchIcon from '@mui/icons-material/Search';
+import { ShoppingCartOutlined } from "@mui/icons-material";
 
 
 function LandingPage(props) {
@@ -64,6 +65,7 @@ function LandingPage(props) {
               size="small"
               name="search"
               variant="outlined"
+              
               sx={{
                 // Root class for the input field
                 "& .MuiOutlinedInput-root": {
@@ -76,15 +78,16 @@ function LandingPage(props) {
                 },
                
               }}
-            > <IconButton size="large" aria-label="search" color="inherit">
+            > <IconButton size="large" aria-label="search" color="#ffffff">
             <SearchIcon />
           </IconButton></TextField>
             <Stack
               direction="row"
-              spacing={2}
+              
               alignItems="center"
               justifyContent="flex-end"
             >
+              <Button><ShoppingCartOutlined color="#ffffff"/></Button>
               <Button color="inherit">Sign In</Button>
               
 
