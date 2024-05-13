@@ -3,8 +3,11 @@ import { Toolbar, TextField, Box, Grid } from "@mui/material";
 import { fetchAllProducts } from "../fetchApi";
 import ProductCard from "../components/ProductCard";
 
+
 function ProductsDisplay() {
   const [allProducts, setAllProducts] = useState([]);
+  const [search,setSearch] = useState('');
+const [debounceTimer,setDebounceTimer] = useState(0);
 
   useEffect(() => {
     if (fetchAllProducts) {
@@ -16,6 +19,21 @@ function ProductsDisplay() {
       console.log(allProducts);
     }
   }, []);
+  useEffect (() => {
+    if (debounceTimer !== 0) {
+      clearTimeout(debounceTimer);
+    }
+
+    const newTimer = setTimeout(() => {
+     // performAPICall(search);
+    }, 800);
+    setDebounceTimer(newTimer);
+    }, [search]
+    )
+
+  const handleInput = (e) => {
+    setSearch(e.target.value);
+  };
   return (
     <div>
       <Toolbar />

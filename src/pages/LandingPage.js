@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Button, Stack, TextField } from "@mui/material";
 import "./LandingPage.css";
 import {AppBar,CssBaseline,Drawer,IconButton,Toolbar,Box,InputAdornment} from "@mui/material";
@@ -7,6 +7,7 @@ import ProductsDisplay from "./ProductsDisplay";
 import Header from "../components/Header";
 import SearchIcon from '@mui/icons-material/Search';
 import { ShoppingCartOutlined } from "@mui/icons-material";
+import SignIn from "../components/SignIn";
 
 
 function LandingPage(props) {
@@ -14,6 +15,7 @@ function LandingPage(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
+ 
 
   const handleDrawerClose = () => {
     setIsClosing(true);
@@ -88,7 +90,8 @@ function LandingPage(props) {
               justifyContent="flex-end"
             >
               <Button><ShoppingCartOutlined color="#ffffff"/></Button>
-              <Button color="inherit">Sign In</Button>
+              
+              <SignIn/>
               
 
               
